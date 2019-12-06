@@ -1,0 +1,58 @@
+<html>
+ <head>
+        <meta charset="utf-8" />
+        <title> IMAGE SLIDESHOW </title>
+       
+        <script type="text/javascript">
+
+            var image1=new Image()
+            image1.src="day.jpg"             <!--Note: Change the day.jpg into your picture name-->
+
+            var image2=new Image()
+            image2.src="monday.jpg"          <!--Note: Change the monday.jpg into your picture name-->
+
+            var image3=new Image()
+            image3.src="tuesday.jpg"         <!--Note: Change the tuesday.jpg into your picture name-->
+
+            var image4=new Image()
+            image4.src="wednesday.jpg"       <!--Note: Change the wednesday.jpg into your picture name-->
+
+            var image5=new Image()
+            image5.src="thursday.jpg"        <!--Note: Change the thursday.jpg into your picture name-->
+
+            var image6=new Image()
+            image6.src="friday.jpg"          <!--Note: Change the friday.jpg into your picture name-->
+
+            var image7=new Image()
+            image7.src="saturday.jpg"        <!--Note: Change the saturday.jpg into your picture name-->
+
+            var image8=new Image()
+            image8.src="sunday.jpg"          <!--Note: Change the sunday.jpg into your picture name-->
+
+         </script>
+       <style>
+            body{background-color: blue; margin: 0 auto;  text-align: center}
+        </style>
+    </head>
+
+<body>
+      
+<img src="day.jpg"  name="slideshow" alt="imageslideshow">
+
+    <script type="text/javascript"> 
+    var numberImage=1
+    function myslide(){
+    document.images.slideshow.src=eval("image"+numberImage+".src")
+    if(numberImage<8) 
+    numberImage = numberImage + 1
+    else
+    numberImage=1
+    setTimeout("myslide()",4500)
+    }
+    myslide()
+
+    </script>
+
+    </body>
+
+</html>
