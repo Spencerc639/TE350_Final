@@ -6,25 +6,64 @@
         <script type="text/javascript">
 
             var image1=new Image()
-            image1.src="hotel1.jpg"             <!--Note: Change the day.jpg into your picture name-->
+            image1.src="hotel1.jpg"             
 
             var image2=new Image()
-            image2.src="Hotel2.jpg"          <!--Note: Change the monday.jpg into your picture name-->
+            image2.src="Hotel2.jpg"          
 
             var image3=new Image()
-            image3.src="Flower.jpg"         <!--Note: Change the tuesday.jpg into your picture name-->
+            image3.src="Flower.jpg"         
 
             var image4=new Image()
-            image4.src="FPSteering.jpg"       <!--Note: Change the wednesday.jpg into your picture name-->
+            image4.src="FPSteering.jpg"       
 
             var image5=new Image()
-            image5.src="WiringDone.jpg"        <!--Note: Change the thursday.jpg into your picture name-->
+            image5.src="WiringDone.jpg"        
 
             var image6=new Image()
-            image6.src="Build.jpg"          <!--Note: Change the friday.jpg into your picture name-->
+            image6.src="Build.jpg"          
 
-            
+            var image7=new Image()
+            image7.src="builder1.jpg"       
 
+            var image8=new Image()
+            image8.src="builder2.jpg"        
+
+            var image9=new Image()
+            image9.src="builder3.jpg"          
+
+            var image10=new Image()
+            image10.src="MegaBlocksCar.jpg"          
+			
+            var image11=new Image()
+            image11.src="MegaBlocksCar1.jpg"          
+			
+			var image12=new Image()
+            image12.src="StarWarsHotWheelsCar.jpg"          
+			
+			var image13=new Image()
+            image13.src="Track.jpg"          
+			
+            var image14=new Image()
+            image14.src="Track1.jpg"          
+			
+			var image15=new Image()
+            image15.src="Pier.jpg"          <!--Note: Found out that for some reason HTML doesnt like the Dinner.jpg, but will work at 15-->
+			
+		    var image16=new Image()
+            image16.src="Pier1.jpg"          
+			
+			var image17=new Image()
+            image17.src="Pier2.jpg"          
+			
+			var image18=new Image()
+            image18.src="Sanddollar.jpg"  
+			
+            var image19=new Image()
+            image19.src="CoconutShrimp.jpg"
+			
+			var image20=new Image()
+            image20.src="Zoltar.jpg" 
          </script>
        <style>
             body{background-color: blue; margin: 0 auto;  text-align: center}
@@ -39,7 +78,7 @@
     var numberImage=1
     function myslide(){
     document.images.slideshow.src=eval("image"+numberImage+".src")
-    if(numberImage<6) 
+    if(numberImage<20) 
     numberImage = numberImage + 1
     else
     numberImage=1
