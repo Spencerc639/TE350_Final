@@ -4,7 +4,7 @@
         <title> CALIFORNIA TRIP SLIDESHOW </title>
        
         <script type="text/javascript">
-
+/* Note: the issues that were being experienced in slideshow seem to be related to having capitalized file extensions - e.g., .JPG. I've changed all of these to lower case to avoid those issues in the future. Linux is case sensitive, so to run this effectively on Raspbian / linux, we need to have the more "neutral" lower case in place for the image files. */
             var image1=new Image()
             image1.src="hotel1.jpg"             
 
@@ -48,7 +48,7 @@
             image14.src="Track1.jpg"          
 			
 			var image15=new Image()
-            image15.src="Pier.jpg"          <!--Note: Found out that for some reason HTML doesnt like the Dinner.jpg, but will work at 15-->
+            image15.src="Pier.jpg"         
 			
 		    var image16=new Image()
             image16.src="Pier1.jpg"          
@@ -72,7 +72,7 @@
 
 <body>
       
-<img src="hotel1.jpg"  name="slideshow" alt="imageslideshow">
+<img src="StarWarsHotWheelsCar.jpg"  name="slideshow" alt="This is the slideshow placeholder image">
 
     <script type="text/javascript"> 
     var numberImage=1
